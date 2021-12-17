@@ -1,16 +1,16 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {                         /*Common selector that clears browser defaults to prevent inconsistencies*/
+    margin: 0;                      /*Sets zero margin all around*/
+    padding: 0;                     
+    box-sizing: border-box;         /*Padding and border are included in elements total width and height, and makes box elements same size*/
   }
 
 
 .header {
-    padding: 15px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 15px;          
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;    /*Account for numerous fonts as a backup depending if a browser might not support the initial font*/
     background-color: #2a607c;
     color: #ffffff;
-    width: 100%;
+    width: 100%;          /*the header's width spans the entire horizontal webpage*/
 }
 
 body {
@@ -18,7 +18,7 @@ body {
 }
 
 .header h1 {
-    display: inline-block;
+    display: inline-block;    /*Allows for the text in the h1 tag of the header to display on the same line horizontally*/
     font-size: 48px;
 }
 
@@ -27,50 +27,50 @@ body {
 }
 
 .header div {
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
+    padding-top: 15px;              /*Will allow 15 pixels of padding surrounding the div box in the header*/
+    margin-right: 20px;             /*Will allow 20 pixels of margin on the right side surrounding the div box in the header*/
+    float: right;                   /*Positions the div box in the header to the right of the webpage*/
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-size: 20px;                
 }
 
 .header div ul {
-    list-style-type: none;
+    list-style-type: none;          /*Removes the default bullet point style for the contents in the div box for the header*/
 }
 
 .header div ul li {
-    display: inline-block;
+    display: inline-block;        /*Allows for the list items in the unordered list of the header to display on the same line horizontally*/
     margin-left: 25px;
     color: white;
 }
 
 a {
     color: #ffffff;
-    text-decoration: none;
+    text-decoration: none;    /*links will display with no underline or ugly blue text*/
 }
 
-.hero {
-    height: 800px;
-    width: 100%;
+.hero {                         
+    height: 800px;        /*picture height of 800 pixels*/
+    width: 100%;           /*picture spans the entire width of the page*/
     margin-bottom: 25px;
     background-image: url("./images2/digital-marketing-meeting.jpg");
-    background-size: cover;
-    background-position: center;
+    background-size: cover;             /*covers the entire div tag for the webpage*/
+    background-position: center;        /*centers the picture to allow for the table and hands to show*/
 }
 
-.float-left {
-    float: left;
-    margin-right: 25px;
+.float-left {           
+    float: left;               /*positions the picture to the left of its respective div tag*/
+    margin-right: 25px;         /*Adds a margin of 25 pixels to the right of the picture so the paragraph is not too close*/
 }
 
 .float-right {
-    float: right;
-    margin-left: 25px;
+    float: right;           /*positions the picture to the right of its respective div tag*/
+    margin-left: 25px;      /*Adds a margin of 25 pixels to the left of the picture so the paragraph is not too close*/
 }
 
 .content {
     width: 75%;
-    display: inline-block;
+    display: inline-block;      /*displays the picture and paragraph description on the same line*/
     margin-left: 20px;
 }
 
